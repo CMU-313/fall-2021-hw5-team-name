@@ -16,3 +16,7 @@ jobs:
       run: make docker-build
     - name: Run tests
       run: make docker-runtest-all
+    - name: pylinter
+      # You may pin to the exact commit or the version.
+      # uses: alexanderdamiani/pylinter@d7a7456437e7c4c7e99585df4fe32010599199a8
+      uses: alexanderdamiani/pylinter@v1.3.0
